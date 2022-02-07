@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./imgHB/loogodenifinitive-removebg-preview.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comforter&family=Dongle:wght@300&family=Poppins:wght@100&family=Supermercado+One&family=Syne+Tactile&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <title>MysBurguer</title>
+
+    <style>
+
+    body{
+    background-color: black;
+     }
+
+     .logo{
+       width: 200px;
+       height: 200px;
+       margin-top: -50px;
+       margin-bottom: -50px;
+     }
+
+     .bg-blue{
+         background-color: black;
+         border-bottom: 1px solid #fff6;
+     }
+
+     .poppins{
+         font-family: poppins;
+     }
+
+     .crI{
+         width: 100%;     
+     }
+
+     .carro{
+         background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(./imgHB/f1.png);
+         width: 100%;
+         min-height: 100vh;
+         background-size: cover;
+     }
+
+     .A{
+         font-size: 30px;
+         color:black;
+         margin-bottom: 20px;
+         background-color: rgb(238, 238, 61);
+         border-radius: 50%;
+         padding: 15px;
+     }
+
+     .text-YL{
+         color: rgb(238, 238, 61);
+     }
+
+     .F{
+         flex-wrap: wrap;
+     }
+
+     .bd{
+         border: none;
+     }
+
+     .syne{
+       font-family: Syne Tactile;
+       font-size: 20px;
+     }
+
+     .comforter{
+       font-family: comforter;
+     }
+
+     .SO{
+       font-family: supermercado one;
+     }
+
+     .B{
+       color: rgb(238, 238, 61);
+       margin-right: 5px;
+     }
+
+     .bold{
+       font-weight: bold;
+     }
+
+     .bg-bt{
+       background-color: rgb(238, 238, 61);
+     }
+
+     .C{
+       color: rgb(238, 238, 61);
+       margin-bottom: 30px;
+     }
+
+     .txtA{
+       resize: none;
+       width: 210px;
+     }
+
+     span{
+       color: red;
+     }
+
+     .bgF{
+       background-color: rgb(2, 2, 27);
+     }
+
+     @media (max-width:991px){
+       .sobre{
+         flex-wrap: wrap;
+       }
+
+       .avali{
+         flex-wrap: wrap;
+       }
+     }
+         
+    </style>
+
+</head>
+<body>
+
+    <!-- Menu -->
+
+    <nav class="navbar navbar-expand-sm bg-blue navbar-dark poppins">
+
+        <div class="navbar-brand ml-4"> <img class="img-fluid rounded-circle logo" src="./imgHB/loogodenifinitive-removebg-preview.png" alt=""></div>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+    <div id="myNav" class="collapse navbar-collapse justify-content-center">
+        <ul class="navbar-nav">
+            <li class="nav-item"><a href="#" class="nav-link active text-light" data-toggle="tab">Inicio</a></li>
+            <li class="nav-item"><a href="#menu" class="nav-link text-light" data-toggle="tab">Menu</a></li>
+            <li class="nav-item"><a href="#sobre" class="nav-link text-light" data-toggle="tab">Sobre</a></li>
+            <li class="nav-item"><a href="#avaliacoes" class="nav-link text-light" data-toggle="tab">Avaliações</a></li>
+            <li class="nav-item"><a href="#contato" class="nav-link text-light" data-toggle="tab">Contato</a></li>
+        </ul>
+    </div>
+    </nav>
+
+
+    <!-- Carrosel -->
+
+<section class="carro">
+
+<div id="meucarrossel" class="carousel slide" data-ride="carousel">
+  
+    <ul class="carousel-indicators">
+      <li data-target="#meucarrossel" data-slide-to="0" class="active"></li>
+      <li data-target="#meucarrossel" data-slide-to="1"></li>
+      <li data-target="#meucarrossel" data-slide-to="2"></li>
+    </ul>
+  
+    <div class="carousel-inner pt-3">
+       <div class="carousel-item active">
+        <div class="d-flex justify-content-center align-items-center crI"><img class="img-fluid" src="./imgHB/koburger-removebg-preview.png" alt=""></div>
+       </div>
+  
+       <div class="carousel-item">
+        <div class="d-flex justify-content-center align-items-center crI"><img class="img-fluid" src="./imgHB/Hamburguer-soja-500x500-removebg-preview.png" alt=""></div> 
+       </div>
+  
+       <div class="carousel-item">
+        <div class="d-flex justify-content-center align-items-center crI"><img class="img-fluid" src="./imgHB/v937861_prozis_2-x-vegan-burger-soy-with-carrot-80-g_2-removebg-preview.png" alt=""></div>
+       </div>
+  
+    </div>
+  
+    <a class="carousel-control-prev" href="#meucarrossel" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a> 
+    <a class="carousel-control-next" href="#meucarrossel" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+  </div>
+
+  <!-- Services -->
+
+  <div class="container py-5 d-flex justify-content-center align-items-center flex-column">
+      <div class="text-light poppins">
+      <h2 class="h1 text-center">O Melhor Hamburguer Da Região</h2>
+      <p class="mb-5">Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum.</p>
+  </div>
+
+  <div class="container d-flex text-light flex-row F justify-content-center align-items-center poppins">
+     <!--  -->
+    <div class="d-flex justify-content-center align-items-center flex-column m-auto text-center">
+        <i class="fas fa-hamburger A"></i>
+        <h2>Melhor qualidade</h2>
+        <p>Lorem Ipsum is simply dummy text <br>
+            of the printing and typesetting industry </p>
+    </div>
+    <!--  -->
+    <div class="d-flex justify-content-center align-items-center flex-column m-auto text-center">
+        <i class="fas fa-headset A"></i>
+        <h2 class="text-light">24/7 Service</h2>
+        <p>Lorem Ipsum is simply dummy text <br>
+            of the printing and typesetting industry </p>
+    </div>
+    <!--  -->
+    <div class="d-flex justify-content-center align-items-center flex-column m-auto text-center">
+        <i class="fas fa-truck A"></i>
+        <h2 class="text-light">Entrega Gratis</h2>
+        <p>Lorem Ipsum is simply dummy text <br>
+            of the printing and typesetting industry </p>
+    </div>
+  </div>
+</section>
+
+
+   <!-- Menu food -->
+
+   <section class="mt-5 pb-5">
+
+    <h2 class="text-light display-md-4 text-center mb-5 mt-5 SO">Menu</h2>
+
+    <ul class="nav nav-tabs nav-justified">
+        <li class="nav-item"> <a href="#home" class="nav-link active text-YL SO" data-toggle="tab"> Hamburguers </a></li>
+        <li class="nav-item"> <a href="#price" class="nav-link text-YL SO" data-toggle="tab"> Bebidas </a></li>
+        <li class="nav-item"> <a href="#about" class="nav-link text-YL SO" data-toggle="tab"> Sobremesas </a></li>
+      </ul>
+   
+      <div class="tab-content">
+        <div id="home" class="tab-pane active">
+
+            <!-- Hamburguers -->
+            <div class="container text-light poppins d-flex justify-content-around align-items-center F mb-4 mt-4">
+
+                <div class="d-flex justify-content-center align-items-center flex-column">
+                <img class="img-fluid" src="./imgHB/HAMBURGUER-CHEDDAR-200x200-removebg-preview.png">
+                <h2 class="display-5 text-center">Hamburguer <br> Cheddar</h2>
+                <h3 class="text-YL">R$:24,45</h3>
+                  </div>
+
+
+                  <div class="d-flex justify-content-center align-items-center flex-column">
+                    <img class="img-fluid" src="./imgHB/x-tudo-removebg-preview.png">
+                    <h2 class="display-5 text-center">Hamburguer <br> X-Tudo</h2>
+                    <h3 class="text-YL">R$:12,50</h3>
+                      </div>
+
+
+                      <div class="d-flex justify-content-center align-items-center flex-column">
+                        <img class="img-fluid" src="./imgHB/xbacon.png">
+                        <h2 class="display-5 text-center">Hamburguer <br> X-Bacon</h2>
+                        <h3 class="text-YL">R$:16,80</h3>
+                          </div>
+            </div>
+
+
+            <!--  -->
+
+
+            <div class="container text-light poppins d-flex justify-content-around align-items-center F mb-4">
+
+                <div class="d-flex justify-content-center align-items-center flex-column">
+                <img class="img-fluid" src="./imgHB/HAMBURGUER-EGG-BACON-200x200-removebg-preview.png">
+                <h2 class="display-5 text-center">Hamburguer <br> Egg Bacon</h2>
+                <h3 class="text-YL">R$:22,15</h3>
+                  </div>
+
+
+                  <div class="d-flex justify-content-center align-items-center flex-column">
+                    <img class="img-fluid" src="./imgHB/hamburguer-removebg-preview.png">
+                    <h2 class="display-5 text-center">Hamburguer <br> Artesanal</h2>
+                    <h3 class="text-YL">R$:24,45</h3>
+                      </div>
+
+
+                      <div class="d-flex justify-content-center align-items-center flex-column">
+                        <img class="img-fluid" src="./imgHB/hamburguer-1-removebg-preview.png">
+                        <h2 class="display-5 text-center">Hamburguer <br> Simples</h2>
+                        <h3 class="text-YL">R$:10,45</h3>
+                          </div>
+            </div>
+
+        </div>
+
+        <!-- Bebidas -->
+        <div id="price" class="tab-pane fade">
+         
+
+            <div class="container text-light poppins d-flex justify-content-around align-items-center F mt-4">
+
+                <div class="d-flex justify-content-center align-items-center flex-column">
+                <img class="img-fluid" src="./imgHB/cocal-removebg-preview.png">
+                <h2 class="display-5 text-center">Coca Cola</h2>
+                <h3 class="text-YL mb-5">R$:3,50</h3>
+                  </div>
+
+
+                  <div class="d-flex justify-content-center align-items-center flex-column">
+                    <img class="img-fluid" src="./imgHB/pepsi-removebg-preview.png">
+                    <h2 class="display-5 text-center">Pepsi</h2>
+                    <h3 class="text-YL mb-5">R$:3,50</h3>
+                      </div>
+
+
+                      <div class="d-flex justify-content-center align-items-center flex-column">
+                        <img class="img-fluid" src="./imgHB/guarana-removebg-preview.png">
+                        <h2 class="display-5 text-center">Guarana</h2>
+                        <h3 class="text-YL mb-5">R$:3,50</h3>
+                          </div>
+
+
+            </div>
+
+            <!--  -->
+
+            <div class="container text-light poppins d-flex justify-content-around align-items-center F mt-4">
+
+                <div class="d-flex justify-content-center align-items-center flex-column">
+                <img class="img-fluid" src="./imgHB/guaravita-removebg-preview.png">
+                <h2 class="display-5 text-center">Guaravita</h2>
+                <h3 class="text-YL mb-5">R$:2,50</h3>
+                  </div>
+
+
+                  <div class="d-flex justify-content-center align-items-center flex-column">
+                    <img class="img-fluid" src="./imgHB/skoll-removebg-preview.png">
+                    <h2 class="display-5 text-center">Skoll</h2>
+                    <h3 class="text-YL mb-5">R$:4,80</h3>
+                      </div>
+
+
+                      <div class="d-flex justify-content-center align-items-center flex-column">
+                        <img class="img-fluid" src="./imgHB/br-removebg-preview.png">
+                        <h2 class="display-5 text-center">Brahma</h2>
+                        <h3 class="text-YL mb-5">R$:4,60</h3>
+                          </div>
+
+
+            </div>
+
+       </div>
+
+
+         <!-- Sobremesas -->
+       <div id="about" class="tab-pane fade">
+         
+        <div class="container text-light poppins d-flex justify-content-around align-items-center F mt-5 mb-4">
+
+            <div class="d-flex justify-content-center align-items-center flex-column">
+            <img class="img-fluid" src="./imgHB/sorvetao-removebg-preview.png">
+            <h2 class="display-5 text-center">Sorvetão</h2>
+            <h3 class="text-YL mb-5">R$:3,50</h3>
+              </div>
+
+              <div class="d-flex justify-content-center align-items-center flex-column">
+                <img class="img-fluid" src="./imgHB/açai-removebg-preview.png">
+                <h2 class="display-5 text-center">Açai</h2>
+                <h3 class="text-YL mb-5">R$:4,50</h3>
+                  </div>
+
+                  <div class="d-flex justify-content-center align-items-center flex-column">
+                    <img class="img-fluid" src="./imgHB/pudinn-removebg-preview.png">
+                    <h2 class="display-5 text-center">Pudin</h2>
+                    <h3 class="text-YL mb-5">R$:5,00</h3>
+                      </div>
+
+        </div>
+
+
+        <!--  -->
+
+
+        <div class="container text-light poppins d-flex justify-content-around align-items-center F">
+
+            <div class="d-flex justify-content-center align-items-center flex-column">
+            <img src="./imgHB/boloc-removebg-preview.png">
+            <h2 class="display-5 text-center">Bolo de <br> Cenoura</h2>
+            <h3 class="text-YL mb-5">R$:5,50</h3>
+              </div>
+
+              <div class="d-flex justify-content-center align-items-center flex-column">
+                <img src="./imgHB/torta-de-mac3a7c3a3-removebg-preview.png">
+                <h2 class="display-5 text-center">Torta de <br>maçã</h2>
+                <h3 class="text-YL mb-5">R$:5,50</h3>
+                  </div>
+
+                  <div class="d-flex justify-content-center align-items-center flex-column">
+                    <img src="./imgHB/mshake-removebg-preview.png">
+                    <h2 class="display-5 text-center">MilkShake <br> Especial</h2>
+                    <h3 class="text-YL mb-5">R$:4,50</h3>
+                      </div>
+
+        </div>
+
+       </div>
+           
+      </div>
+
+</section>
+
+  <!-- Sobre -->
+
+
+  <div class="container pt-5 pb-5">
+
+    <h2 class="text-light display-md-4 text-center mb-5 mt-5 SO">Bem vindos</h2>
+
+    <div class="d-flex justify-content-center align-items-center sobre">
+    <img class="img-fluid w-50 float-left pr-4 mb-4" src="./imgHB/hsobre.jpg" alt="">
+
+    <div class="text-light poppins">
+    <h2 class="bold">Entre No Paraiso Do Hamburguer</h2>
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+       Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+
+       <!-- Qualidades -->
+
+       <div class="d-flex justify-content-center align-items-center bold F mb-1">
+        <p class="mr-4"> <i class="fas fa-check B"></i> Melhor Preço</p>
+        <p class="mr-4"> <i class="fas fa-check B"></i> Melhor Serviço</p>
+        <p class="mr-4"> <i class="fas fa-check B"></i> Igrediente Fresco</p>
+       </div>
+
+       <!--  -->
+
+       <div class="d-flex justify-content-center align-items-center bold F mb-3">
+        <p class="mr-4"> <i class="fas fa-check B"></i> Pãezinhos Apoiados</p>
+        <p class="mr-4"> <i class="fas fa-check B"></i> Queijo Natural</p>
+        <p class="mr-4"> <i class="fas fa-check B"></i> Vegetariano & <br> Não-Vegetariano </p>
+       </div>
+
+
+       <div class="d-flex justify-content-center align-items-center">
+       <button class="btn text-dark syne bold bg-bt mb-5 text-center">Saiba Mais</button>
+      </div>
+
+   </div>
+
+  </div>
+
+  </div>
+
+
+  <!-- Avaliações -->
+
+  <div class="container text-light poppins mt-5 pb-5">
+
+    <h2 class="text-light display-md-4 text-center mb-5 mt-5 SO">Avaliações</h2>
+
+    <div class="d-flex justify-content-around align-items-center avali">
+
+      <div class="d-flex justify-content-center align-items-center flex-column border p-3 border-warning mb-2">
+      <img class="img-fluid rounded-circle" src="./imgHB/jq.jpg" alt="">
+      <h2>Lorem Ipsum</h2>
+      <p>Lorem Ipsum is simply dummy text of the <br> printing and typesetting industry.
+       <br> industry's standard.</p>
+
+       <div class="d-flex">
+       <i class="fas fa-star C mr-1"></i>
+       <i class="fas fa-star C mr-1"></i>
+       <i class="fas fa-star C mr-1"></i>
+       <i class="fas fa-star C mr-1"></i>
+      </div>
+
+      </div>
+
+      <div class="d-flex justify-content-center align-items-center flex-column border p-3 border-warning mb-2">
+        <img class="img-fluid rounded-circle" src="./imgHB/jq.jpg" alt="">
+        <h2>Lorem Ipsum</h2>
+        <p>Lorem Ipsum is simply dummy text of the <br> printing and typesetting industry.
+         <br> industry's standard.</p>
+         
+         <div class="d-flex">
+          <i class="fas fa-star C mr-1"></i>
+          <i class="fas fa-star C mr-1"></i>
+          <i class="fas fa-star C mr-1"></i>
+          <i class="fas fa-star C mr-1"></i>
+         </div>
+
+        </div>
+
+        <div class="d-flex justify-content-center align-items-center flex-column border p-3 border-warning">
+          <img class="img-fluid rounded-circle" src="./imgHB/jq.jpg" alt="">
+          <h2>Lorem Ipsum</h2>
+          <p>Lorem Ipsum is simply dummy text of the <br> printing and typesetting industry.
+           <br> industry's standard.</p>
+           
+           <div class="d-flex">
+            <i class="fas fa-star C mr-1"></i>
+            <i class="fas fa-star C mr-1"></i>
+            <i class="fas fa-star C mr-1"></i>
+            <i class="fas fa-star C mr-1"></i>
+           </div>
+
+          </div>
+    </div>
+  </div>
+
+
+  <!-- Contato -->
+
+
+  <div class="container poppins text-light mt-5 pb-5 d-flex justify-content-center align-items-center flex-column">
+    <h2 class="text-light display-md-4 text-center mb-5 mt-5 SO">Faça Já O Seu Pedido</h2>
+
+    <div class="d-flex justify-content-center align-items-center F">
+
+    <div class="d-flex justify-content-center align-items-center flex-column mr-5">
+      <i class="fas fa-phone A"></i>
+      <h2>Telefone :</h2>
+      <p>4002-8922</p>
+    </div>
+
+
+    <div class="d-flex justify-content-center align-items-center flex-column mr-5">
+      <i class="fas fa-envelope A"></i>
+      <h2>Email :</h2>
+      <p>Mysburguer@hotmail.com</p>
+    </div>
+
+
+    <div class="d-flex justify-content-center align-items-center flex-column mr-5">
+      <i class="fas fa-map A"></i>
+      <h2>Endereço :</h2>
+      <p>Rua Silva</p>
+    </div>
+
+  </div>
+
+  <!-- Form Contato -->
+
+  <form class="mt-5 d-flex justify-content-center align-items-center flex-column">
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" class="form-control bg-dark text-light bold" id="email">
+    </div>
+    <div class="form-group">
+      <label for="pwd">Nome:</label>
+      <input type="text" class="form-control bg-dark text-light bold" id="pwd">
+    </div>
+
+    <div class="form-group">
+      <label for="exampleFormControlTextarea1">Mensagem</label>
+      <textarea class="form-control bg-dark text-light txtA bold" id="exampleFormControlTextarea1"></textarea>
+    </div>    
+
+    <button type="submit" class="btn btn-warning text-dark syne mb-5">Enviar</button>
+  </form>
+  </div>
+
+
+  <!-- Fim -->
+
+<!-- Footer -->
+<footer class="bgF text-center text-white poppins">
+  
+  <div class="container p-4">
+  
+    <section class="mb-4">
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-whatsapp"></i
+      ></a>
+      <!-- Instagram -->
+      <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/myst1_prog/" role="button"
+        ><i class="fab fa-instagram"></i
+      ></a>
+      <!-- Linkedin -->
+      <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/myst1-dev/" role="button"
+        ><i class="fab fa-linkedin-in"></i
+      ></a>
+      <!-- Github -->
+      <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/Myst1-Dev" role="button"
+        ><i class="fab fa-github"></i
+      ></a>
+    </section>
+    <!-- Section: Social media -->  
+    <section class="mb-4">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum
+        repellat quaerat voluptatibus placeat nam, commodi optio pariatur est quia magnam
+        eum harum corrupti dicta, aliquam sequi voluptate quas.
+      </p>
+    </section>
+    <!-- Section: Text -->
+
+  </div>
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2022 Copyright:
+    <a class="text-white text-decoration-none" href="https://myst1-dev.github.io/Myst1-Dev/"> <span> Myst1 Dev </span></a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    
+</body>
+</html>
