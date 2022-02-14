@@ -49,7 +49,8 @@
          margin-bottom: 20px;
          background-color: rgb(238, 238, 61);
          border-radius: 50%;
-         padding: 15px;
+         padding: 18px;
+         clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
      }
 
      .text-YL{
@@ -112,6 +113,18 @@
        background-color: rgb(2, 2, 27);
      }
 
+     .bg-form{
+        background-color:#f147;
+        padding: 0 10px;
+        width: 270px;
+        border-radius: 26px 69px 78px 45px;
+        border: 1px solid rgb(238, 238, 61);
+     }
+
+     .w50{
+       width: 50%;
+     }
+
      @media (max-width:991px){
        .sobre{
          flex-wrap: wrap;
@@ -120,6 +133,13 @@
        .avali{
          flex-wrap: wrap;
        }
+
+       .w50{
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+       }
+
      }
          
     </style>
@@ -228,6 +248,7 @@
         <li class="nav-item"> <a href="#home" class="nav-link active text-YL SO" data-toggle="tab"> Hamburguers </a></li>
         <li class="nav-item"> <a href="#price" class="nav-link text-YL SO" data-toggle="tab"> Bebidas </a></li>
         <li class="nav-item"> <a href="#about" class="nav-link text-YL SO" data-toggle="tab"> Sobremesas </a></li>
+        <li class="nav-item"> <a href="#combo" class="nav-link text-YL SO" data-toggle="tab"> Combo </a></li>
       </ul>
    
       <div class="tab-content">
@@ -397,6 +418,54 @@
         </div>
 
        </div>
+
+       <!-- Combo -->
+         <div id="combo" class="tab-pane fade">
+         
+          <div class="container text-light poppins d-flex justify-content-around align-items-center F mt-5 mb-4">
+  
+              <div class="d-flex justify-content-center align-items-center flex-column">
+              <img class="img-fluid" src="./imgHB/combo1-removebg-preview.png">
+              <h2 class="display-5 text-center">Combo Delicio</h2>
+              <h3 class="text-YL mb-5">R$:24,50</h3>
+                </div>
+  
+                <div class="d-flex justify-content-center align-items-center flex-column">
+                  <img class="img-fluid" src="./imgHB/combo2-removebg-preview.png">
+                  <h2 class="display-5 text-center">Combo Judeu</h2>
+                  <h3 class="text-YL mb-5">R$:44,50</h3>
+                    </div>
+  
+                    <div class="d-flex justify-content-center align-items-center flex-column">
+                      <img class="img-fluid" src="./imgHB/combo_heineken-200x200-removebg-preview.png">
+                      <h2 class="display-5 text-center">Combo Heineken</h2>
+                      <h3 class="text-YL mb-5">R$:55,00</h3>
+                        </div>
+  
+          </div>
+
+          <!--  -->
+
+          <div class="container text-light poppins d-flex justify-content-around align-items-center F">
+  
+            <div class="d-flex justify-content-center align-items-center flex-column">
+            <img class="img-fluid" src="./imgHB/combopal.png">
+            <h2 class="display-5 text-center">Combo O Bom</h2>
+            <h3 class="text-YL mb-5">R$:67,50</h3>
+              </div>
+
+              <div class="d-flex justify-content-center align-items-center flex-column">
+                <img class="img-fluid" src="./imgHB/small-removebg-preview.png">
+                <h2 class="display-5 text-center">Combo Bolão</h2>
+                <h3 class="text-YL mb-5">R$:21,50</h3>
+                  </div>
+
+                  <div class="d-flex justify-content-center align-items-center flex-column">
+                    <img class="img-fluid" src="./imgHB/sorvetoes.png">
+                    <h2 class="display-5 text-center">Combo Os Sorvetões</h2>
+                    <h3 class="text-YL mb-5">R$:6,00</h3>
+                      </div>
+
            
       </div>
 
@@ -407,10 +476,10 @@
 
   <div class="container pt-5 pb-5">
 
-    <h2 class="text-light display-md-4 text-center mb-5 mt-5 SO">Bem vindos</h2>
+    <h2 class="text-light display text-center mb-5 mt-5 SO">Bem vindos</h2>
 
     <div class="d-flex justify-content-center align-items-center sobre">
-    <img class="img-fluid w-50 float-left pr-4 mb-4" src="./imgHB/hsobre.jpg" alt="">
+    <img class="img-fluid w50 float-left pr-4 mb-4" src="./imgHB/hsobre.jpg" alt="">
 
     <div class="text-light poppins">
     <h2 class="bold">Entre No Paraiso Do Hamburguer</h2>
@@ -469,7 +538,7 @@
       </div>
 
       <div class="d-flex justify-content-center align-items-center flex-column border p-3 border-warning mb-2">
-        <img class="img-fluid rounded-circle" src="./imgHB/jq.jpg" alt="">
+        <img class="img-fluid rounded-circle" src="./imgHB/gordon-ramsay-200x200 (1).jpg" alt="">
         <h2>Lorem Ipsum</h2>
         <p>Lorem Ipsum is simply dummy text of the <br> printing and typesetting industry.
          <br> industry's standard.</p>
@@ -484,7 +553,7 @@
         </div>
 
         <div class="d-flex justify-content-center align-items-center flex-column border p-3 border-warning">
-          <img class="img-fluid rounded-circle" src="./imgHB/jq.jpg" alt="">
+          <img class="img-fluid rounded-circle" src="./imgHB/nobu1 (2).jpg" alt="">
           <h2>Lorem Ipsum</h2>
           <p>Lorem Ipsum is simply dummy text of the <br> printing and typesetting industry.
            <br> industry's standard.</p>
@@ -533,25 +602,26 @@
 
   <!-- Form Contato -->
 
+  <div class="bg-form">
   <form class="mt-5 d-flex justify-content-center align-items-center flex-column">
     <div class="form-group">
-      <label for="email">Email:</label>
-      <input type="email" class="form-control bg-dark text-light bold" id="email">
+      <label class="text-YL" for="email">Email:</label>
+      <input type="email" class="form-control bg-light text-dark bold" id="email">
     </div>
     <div class="form-group">
-      <label for="pwd">Nome:</label>
-      <input type="text" class="form-control bg-dark text-light bold" id="pwd">
+      <label class="text-YL" for="pwd">Nome:</label>
+      <input type="text" class="form-control bg-light text-dark bold" id="pwd">
     </div>
 
     <div class="form-group">
-      <label for="exampleFormControlTextarea1">Mensagem</label>
-      <textarea class="form-control bg-dark text-light txtA bold" id="exampleFormControlTextarea1" rows="3"></textarea>
+      <label class="text-YL" for="exampleFormControlTextarea1">Mensagem</label>
+      <textarea class="form-control bg-light text-dark txtA bold" id="exampleFormControlTextarea1" rows="3"></textarea>
     </div>    
 
     <button type="submit" class="btn btn-warning text-dark syne mb-5">Enviar</button>
   </form>
   </div>
-
+</div>
 
   <!-- Fim -->
 
@@ -592,7 +662,7 @@
   <!-- Copyright -->
   <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
     © 2022 Copyright:
-    <a class="text-white text-decoration-none" href="https://myst1-dev.github.io/Myst1-Dev/"> <span> Myst1 Dev </span></a>
+    <a class="text-white text-decoration-none" href="https://myst1-dev1.github.io/Myst1-Dev/"> <span> Myst1 Dev </span></a>
   </div>
   <!-- Copyright -->
 </footer>
