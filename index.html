@@ -114,10 +114,10 @@
      }
 
      .bg-form{
-        background:linear-gradient(15deg,rgb(238, 238, 61),#f47);
+        background:linear-gradient(120deg,rgb(238, 238, 61),orangered);
         padding: 0 10px;
         width: 270px;
-        border-radius: 50px 45px 45px 50px;
+        border-radius: 10px;
         
      }
 
@@ -249,7 +249,7 @@
 
     <h2 class="text-light display-md-4 text-center mb-5 mt-5 SO">Menu</h2>
 
-    <ul class="nav nav-tabs nav-justified">
+    <ul class="nav nav-tabs nav-justified border-success">
         <li class="nav-item"> <a href="#home" class="nav-link active text-YL SO" data-toggle="tab"> Hamburguers </a></li>
         <li class="nav-item"> <a href="#price" class="nav-link text-YL SO" data-toggle="tab"> Bebidas </a></li>
         <li class="nav-item"> <a href="#about" class="nav-link text-YL SO" data-toggle="tab"> Sobremesas </a></li>
@@ -611,16 +611,16 @@
   <form class="mt-5 d-flex justify-content-center align-items-center flex-column">
     <div class="form-group">
       <label class="txtLB" for="email">Email:</label>
-      <input type="email" class="form-control bg-light text-dark bold" id="email">
+      <input type="email" required class="form-control bg-light text-dark bold" id="email">
     </div>
     <div class="form-group">
       <label class="txtLB" for="pwd">Nome:</label>
-      <input type="text" class="form-control bg-light text-dark bold" id="pwd">
+      <input type="text" required class="form-control bg-light text-dark bold" id="pwd">
     </div>
 
     <div class="form-group">
       <label class="txtLB" for="exampleFormControlTextarea1">Mensagem</label>
-      <textarea class="form-control bg-light text-dark txtA bold" id="exampleFormControlTextarea1" rows="3"></textarea>
+      <textarea class="form-control bg-light text-dark txtA bold" id="exampleFormControlTextarea1" required rows="3"></textarea>
     </div>    
 
     <button type="submit" class="btn btn-success text-dark syne mb-5">Enviar</button>
